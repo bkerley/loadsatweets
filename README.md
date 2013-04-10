@@ -18,7 +18,7 @@ ten_tweets = File.read 'ten_tweets.json'
 parsed_tweets = JSON.parse ten_tweets
 
 tweet_texts = parsed_tweets.map{|tweet| tweet['text']}
-tweet_words = tweet_texts.map{|text| text.splig}
+tweet_words = tweet_texts.map{|text| text.split}
 words = tweet_words.flatten
 
 word_count = Hash.new(0)
