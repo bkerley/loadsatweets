@@ -28,3 +28,34 @@ end
 ```
 
 Now you should have a hash of word counts.
+
+Next Steps
+----------
+
+1. "Ruby" and "ruby" are the same word, normalize them.
+
+2. "ruby" and "ruby." are the same word, normalize them.
+
+3. What should we count "conmigo.♥" as?
+
+4. What words are used the most?
+
+5. Any guessees on what I searched for?
+
+Files
+-----
+
+* Gemfile - loads gems
+
+* Gemfile.lock - loads gems
+
+* README.md - this file
+
+* clean.rb - script to clean up raw_tweets.json
+
+* raw_tweets.json - over five thousand tweets right from Twitter's streaming API
+
+* ten_tweets.json - ten clean and easy-to-parse tweets
+
+* tweets.json - over five thousand tweets that are easy-to-parse
+  (but there are still over five thousand of them)
