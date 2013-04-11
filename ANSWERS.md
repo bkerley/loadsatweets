@@ -31,4 +31,10 @@ end
 
 4. What words are used the most?
 
+```ruby
+word_count.sort_by do |key, value|
+  value
+end
+```  
+
 5. Any guessees on what I searched for?
