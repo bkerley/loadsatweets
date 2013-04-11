@@ -25,6 +25,8 @@ word_count = Hash.new(0)
 words.each do |w|
   word_count[w] += 1
 end
+
+total = word_count.values.inject(0){|t, c| t + c}
 ```
 
 Now you should have a hash of word counts.
